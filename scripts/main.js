@@ -7,9 +7,7 @@ function getApiInfo() {
     adviceId.innerHTML = "ADVICE #"+i.slip.id
     adviceText.innerHTML = '"' + i.slip.advice + '"'
     function typeWriter(e, tempo) {
-      if (e.classList.contains("writing")) {
-        return 0
-      } else {
+      if (!e.classList.contains("writing")) {
         const textArray = e.innerHTML.split("")
         e.classList.add("writing")
         setTimeout(function () {e.classList.remove("writing")}, tempo * e.innerHTML.length);
@@ -19,6 +17,8 @@ function getApiInfo() {
             e.innerHTML += letter
           }, tempo * i)
         })
+      } else {
+        return false
       }
     }
     typeWriter(adviceId, 75)
