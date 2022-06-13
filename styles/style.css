@@ -28,7 +28,7 @@ body main {
 body main section {
   -webkit-box-shadow: 0px 0px 22px 9px rgba(0, 0, 0, 0.144);
           box-shadow: 0px 0px 22px 9px rgba(0, 0, 0, 0.144);
-  padding: 2vw;
+  padding: 10vh 2vw;
   background-color: #323a49;
   width: 38vw;
   height: 50vh;
@@ -39,9 +39,9 @@ body main section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -54,7 +54,7 @@ body main section {
   body main section {
     width: 80vw;
     height: 60vh;
-    padding: 4vw;
+    padding: 12vh 4vw;
   }
 }
 
